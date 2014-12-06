@@ -9,6 +9,10 @@
 */
 
 /* Basic */
+	.slogan {
+		font-weight: 500;
+
+	}
 
 	body {
 		background: #fff;
@@ -1037,7 +1041,7 @@
 
 		#banner h2 {
 			font-size: 3.5em;
-			font-weight: bold;
+			font-weight: bolder;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
