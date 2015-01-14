@@ -4,6 +4,7 @@
 #include <math.h>
 #include <Wire.h>
 #include "rgb_lcd.h"
+#include "Barometer.h"
 
 IoTkit iotkit;
 float temperature; // temperature reading; gets updated with latest reading in loop
@@ -27,12 +28,19 @@ int peltier_level = map(power, 0, 99, 0, 255); //This is a value from 0 to 255 t
 #define DHTTYPE DHT11 // DHT 11
 DHT dht(DHTPIN, DHTTYPE);
 
+//variables for pressure sensor
+float pressure;
+float atm;
+float altitude;
+Barometer pressure_sensor;
+
 void setup(){
     Serial.begin(9600);
     iotkit.begin();
     lcd.begin(16, 2);
     lcd.setRGB(colorR, colorG, colorB);
     dht.begin();
+    pressure_sensor.init();
     
 }
 
@@ -53,6 +61,8 @@ void temp_control(temperature) {
     lcd.setCursor(0, 1);
   }
 }
+
+
 
 void heat_control(diff) {
 
@@ -76,12 +86,16 @@ void loop(){
   delay(500);
   humidity = dht.readHumidity();
   temperature = dht.readTemperature();
+  pressure = pressure_sensor.bmp085GetPressure(pressure_sensor.bmp085ReadUP());//Get the temperature
+  altitude = pressure_sensor.calcAltitude(pressure); //Uncompensated caculation - in Meters 
+  atm = pressure / 101325; 
   float diff = temperature - setpoint;
   iotkit.send("temp", temperature);
 
   Serial.print("Current temperature/humidity is "); Serial.println(temperature);
-  Serial.println("Setpoint is "); Serial.println(setpoint);
-  Serial.println("Difference is "); Serial.println(diff);
+  Serial.print("Setpoint is "); Serial.println(setpoint);
+  Serial.print("Difference is "); Serial.println(diff);
+  Serial.print("Pressure is "); Serial.println(pressure);
 
   temp_control(temperature);
   heat_control(diff);

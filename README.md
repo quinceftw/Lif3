@@ -7,3 +7,42 @@ Its purpose is to provide a place for scientists to carry out biological experim
 ====
 
 Magnitude.io Space Hackathon
+
+====
+
+Team Members:
+
+- Justine De Caires
+- Anthony Di Franco
+- Christopher Frendl
+- Quincy Huynh
+- Jennifer Kaehms
+- Zekun Wang
+- Richard Xu
+
+====
+
+**Code Progress:**
+* Temperature - Done
+* Humidity - Done
+* Pressure - Done
+* LED - In Progress
+* Camera - In Progress
+
+*NTB - need to buy*
+
+**Hardware Progress:**
+* Temperature - Done 
+* Humidity - NTB
+* Pressure - NTB
+* LED - In Progress
+* Camera - In Progress and NTB more
+
+**Structure Progress:**
+*Box - Prototype
+
+**Organics Progress:**
+*Plants - picked out and growing
+
+====
+
