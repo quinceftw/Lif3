@@ -10,7 +10,7 @@ Magnitude.io Space Hackathon
 
 ====
 
-Team Members:
+**Team Members:**
 
 - Justine De Caires
 - Anthony Di Franco
@@ -26,6 +26,8 @@ Team Members:
 * Temperature - Done
 * Humidity - Done
 * Pressure - Done
+* DataLogging - In Progress
+* Storage - In Progress
 * LED - In Progress
 * Camera - In Progress
 
@@ -35,6 +37,7 @@ Team Members:
 * Temperature - Done 
 * Humidity - NTB
 * Pressure - NTB
+* Storage - Done, temporarily use SD card
 * LED - In Progress
 * Camera - In Progress and NTB more
 
@@ -43,6 +46,12 @@ Team Members:
 
 **Organics Progress:**
 *Plants - picked out and growing
+
+====
+
+**Meeting times:**
+- 1/14/15
+- TBD
 
 ====
 
