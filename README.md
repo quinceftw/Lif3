@@ -31,6 +31,8 @@ Magnitude.io Space Hackathon
 * LED - In Progress
 * Camera - In Progress
 
+====
+
 *NTB - need to buy*
 
 **Hardware Progress:**
@@ -41,8 +43,12 @@ Magnitude.io Space Hackathon
 * LED - In Progress
 * Camera - In Progress and NTB more
 
+====
+
 **Structure Progress:**
 *Box - Prototype
+
+====
 
 **Organics Progress:**
 *Plants - picked out and growing
