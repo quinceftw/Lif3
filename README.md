@@ -46,12 +46,12 @@ Magnitude.io Space Hackathon
 ====
 
 **Structure Progress:**
-*Box - Prototype
+* Box - Prototype
 
 ====
 
 **Organics Progress:**
-*Plants - picked out and growing
+* Plants - picked out and growing
 
 ====
 
